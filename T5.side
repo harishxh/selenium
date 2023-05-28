@@ -1,0 +1,49 @@
+{
+  "id": "c7392f5a-2a75-4ff9-8adc-c90fd630dc77",
+  "version": "2.0",
+  "name": "T5",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "2d8f5355-e272-4881-a784-8ca564d90187",
+    "name": "T5",
+    "commands": [{
+      "id": "21a13cc5-bc66-4c73-9215-2832e627eb55",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8336232-4bd2-4561-ba10-ed017256bd07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bedffe5-7fff-4bd0-bca2-02389f720e02",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "id=input-amount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "45a60d60-4345-455e-8e11-e7a770061ea3",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "name=agree",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "64c38a01-12c0-4a52-83e6-28185253ba86",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2d8f5355-e272-4881-a784-8ca564d90187"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}

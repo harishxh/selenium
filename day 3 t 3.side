@@ -1,0 +1,75 @@
+{
+  "id": "12a39d9b-36d9-417d-b005-0b5cb3526eba",
+  "version": "2.0",
+  "name": "day 3 t 3",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "209201e4-514a-4770-846f-2da11db21823",
+    "name": "t3",
+    "commands": [{
+      "id": "e4f82372-81fb-4717-8219-5fe72e92aa83",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3be2d30a-7bd6-495a-a0e8-8fee6aa2248d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa2d6f06-29c8-41d5-9a75-73b1a652be39",
+      "comment": "",
+      "command": "click",
+      "target": "css=#logo .img-fluid",
+      "targets": [
+        ["css=#logo .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Your Store']", "xpath:img"],
+        ["xpath=//div[@id='logo']/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e2fa0cf-f7a0-45e0-9348-ceb41df07c04",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "e9cc5e49-47e0-4386-a603-5c9b76437f43",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Your Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1edb8bff-0ba9-43ce-8d29-40b39e607c97",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "p1"
+    }, {
+      "id": "e3882ac8-7118-4742-8274-8d144c4fa5f6",
+      "comment": "",
+      "command": "assert",
+      "target": "p1",
+      "targets": [],
+      "value": "https://demo.opencart.com/index.php?route=common/home&language=en-gb"
+    }]
+  }],
+  "suites": [{
+    "id": "276809cc-cd1c-4c84-bbef-2b20fd410205",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["209201e4-514a-4770-846f-2da11db21823"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
